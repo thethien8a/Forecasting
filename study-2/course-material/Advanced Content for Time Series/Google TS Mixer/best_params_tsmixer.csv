@@ -1,0 +1,11 @@
+,3
+num_blocks,6
+n_epochs,15
+input_chunk_length,72
+hidden_size,20
+ff_size,7
+output_chunk_length,24
+add_encoders,"{'cyclic': {'future': ['hour', 'day', 'dayofweek', 'week', 'month']}, 'datetime_attribute': {'future': ['hour', 'day', 'dayofweek', 'week', 'month']}, 'position': {'past': ['relative'], 'future': ['relative']}, 'custom': {'past': [<function encode_year at 0x7d70a232efc0>], 'future': [<function encode_year at 0x7d70a232efc0>]}, 'transformer': Scaler, 'tz': 'CET'}"
+use_reversible_instance_norm,True
+pl_trainer_kwargs,"{'accelerator': 'gpu', 'devices': [0]}"
+RMSE,54.716409762238655
